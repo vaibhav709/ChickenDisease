@@ -107,3 +107,93 @@ Source-Age: 0
 [2025-07-27 05:37:13,576:  main:  INFO:  >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2025-07-28 17:06:11,333:  common:  INFO:  YAML file config/config.yaml loaded successfully.]
+[2025-07-28 17:06:11,337:  common:  INFO:  YAML file params.yaml loaded successfully.]
+[2025-07-28 17:06:11,338:  common:  INFO:  Created directory at artifacts]
+[2025-07-28 17:07:38,721:  common:  INFO:  YAML file config/config.yaml loaded successfully.]
+[2025-07-28 17:07:38,724:  common:  INFO:  YAML file params.yaml loaded successfully.]
+[2025-07-28 17:07:38,724:  common:  INFO:  Created directory at artifacts]
+[2025-07-28 17:07:38,725:  common:  INFO:  Created directory at artifacts/prepare_base_model]
+[2025-07-28 17:08:24,414:  common:  INFO:  YAML file config/config.yaml loaded successfully.]
+[2025-07-28 17:08:24,416:  common:  INFO:  YAML file params.yaml loaded successfully.]
+[2025-07-28 17:08:24,417:  common:  INFO:  Created directory at artifacts]
+[2025-07-28 17:08:24,417:  common:  INFO:  Created directory at artifacts/prepare_base_model]
+[2025-07-28 17:09:55,849:  common:  INFO:  YAML file config/config.yaml loaded successfully.]
+[2025-07-28 17:09:55,850:  common:  INFO:  YAML file params.yaml loaded successfully.]
+[2025-07-28 17:09:55,851:  common:  INFO:  Created directory at artifacts]
+[2025-07-28 17:09:55,852:  common:  INFO:  Created directory at artifacts/prepare_base_model]
+[2025-07-28 17:10:04,032:  saving_api:  WARNING:  You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-07-28 17:10:04,164:  saving_api:  WARNING:  You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-07-28 17:29:13,575:  main:  INFO:  >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-07-28 17:29:13,576:  common:  INFO:  YAML file config/config.yaml loaded successfully.]
+[2025-07-28 17:29:13,577:  common:  INFO:  YAML file params.yaml loaded successfully.]
+[2025-07-28 17:29:13,577:  common:  INFO:  Created directory at artifacts]
+[2025-07-28 17:29:13,577:  common:  INFO:  Created directory at artifacts/data_ingestion]
+[2025-07-28 17:29:13,577:  main:  ERROR:  'NoneType' object has no attribute 'local_data_file']
+Traceback (most recent call last):
+  File "/home/vaibh/DL Projects/chickenApp/ChickenDisease/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/vaibh/DL Projects/chickenApp/ChickenDisease/src/CNN_classifier/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "/home/vaibh/DL Projects/chickenApp/ChickenDisease/src/CNN_classifier/components/data_ingestion.py", line 16, in download_file
+    if not os.path.exists(self.config.local_data_file):
+AttributeError: 'NoneType' object has no attribute 'local_data_file'
+[2025-07-29 10:03:47,059:  main:  INFO:  >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-07-29 10:03:47,060:  common:  INFO:  YAML file config/config.yaml loaded successfully.]
+[2025-07-29 10:03:47,061:  common:  INFO:  YAML file params.yaml loaded successfully.]
+[2025-07-29 10:03:47,062:  common:  INFO:  Created directory at artifacts]
+[2025-07-29 10:03:47,062:  common:  INFO:  Created directory at artifacts/data_ingestion]
+[2025-07-29 10:03:47,062:  main:  ERROR:  'NoneType' object has no attribute 'local_data_file']
+Traceback (most recent call last):
+  File "/home/vaibh/DL Projects/chickenApp/ChickenDisease/main.py", line 9, in <module>
+    data_ingestion.main()
+  File "/home/vaibh/DL Projects/chickenApp/ChickenDisease/src/CNN_classifier/pipeline/stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+  File "/home/vaibh/DL Projects/chickenApp/ChickenDisease/src/CNN_classifier/components/data_ingestion.py", line 16, in download_file
+    if not os.path.exists(self.config.local_data_file):
+AttributeError: 'NoneType' object has no attribute 'local_data_file'
+[2025-07-29 10:10:02,189:  main:  INFO:  >>>>>> stage Data Ingestion stage started <<<<<<]
+[2025-07-29 10:10:02,191:  common:  INFO:  YAML file config/config.yaml loaded successfully.]
+[2025-07-29 10:10:02,192:  common:  INFO:  YAML file params.yaml loaded successfully.]
+[2025-07-29 10:10:02,192:  common:  INFO:  Created directory at artifacts]
+[2025-07-29 10:10:02,192:  common:  INFO:  Created directory at artifacts/data_ingestion]
+[2025-07-29 10:10:05,533:  data_ingestion:  INFO:  artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: B605:A6040:E7242:22A884:68889E06
+Accept-Ranges: bytes
+Date: Tue, 29 Jul 2025 10:10:15 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10242-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1753783814.451488,VS0,VE944
+Vary: Authorization,Accept-Encoding
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9da20caa0cd3b44e6ba59caf467494404bcee989
+Expires: Tue, 29 Jul 2025 10:15:15 GMT
+Source-Age: 1
+
+]
+[2025-07-29 10:10:05,635:  main:  INFO:  >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2025-07-29 10:10:05,635:  main:  INFO:  >>>>>> stage Prepare Base Model started <<<<<<]
+[2025-07-29 10:10:05,636:  common:  INFO:  YAML file config/config.yaml loaded successfully.]
+[2025-07-29 10:10:05,637:  common:  INFO:  YAML file params.yaml loaded successfully.]
+[2025-07-29 10:10:05,637:  common:  INFO:  Created directory at artifacts]
+[2025-07-29 10:10:05,638:  common:  INFO:  Created directory at artifacts/prepare_base_model]
+[2025-07-29 10:10:07,909:  saving_api:  WARNING:  You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-07-29 10:10:08,044:  saving_api:  WARNING:  You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2025-07-29 10:10:08,160:  main:  INFO:  >>>>>> stage Prepare Base Model completed <<<<<<
+
+x==========x]
